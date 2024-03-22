@@ -1,0 +1,12 @@
+1. Go to this link
+https://www.kaggle.com/models/google/landmarks/frameworks/tfLite/variations/classifier-europe-v1
+
+2. Downlaod 1.tflite file of selected region
+
+3. Copy and paste it here to assets folder of this project.
+
+4. Set file name inside TFLiteLandmarkClassifier.clas which is under package below:
+package com.polatechno.TfLiteLandmarkClassifier.data
+
+    For example if you name you tflite file as "europe_landmarks.tflite", should be replaced as below:
+    classifier = ImageClassifier.createFromFileAndOptions(context, "europe_landmarks.tflite", options)
